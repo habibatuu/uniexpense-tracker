@@ -1,0 +1,397 @@
+body {
+    background: #f4f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    min-height: 70vh;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h5 {
+    color: #64748b;
+}
+
+.card h3 {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FORMS
+   ========================= */
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #dbe2ea;
+    background: #ffffff;
+    color: #1f2937;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn {
+    border-radius: 10px;
+    padding: 9px 18px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-warning {
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+.table {
+    vertical-align: middle;
+}
+
+.table thead {
+    font-weight: bold;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background: #f1f5f9;
+}
+
+
+/* =========================
+   REPORTS
+   ========================= */
+
+.reports-card {
+    min-height: 200px;
+}
+
+
+/* =========================
+   ABOUT PAGE
+   ========================= */
+
+.about-section {
+    padding: 30px;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background: #1e3a8a;
+    color: #ffffff;
+}
+
+footer h5 {
+    color: #ffffff;
+}
+
+
+/* =========================
+   LISTS
+   ========================= */
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ALERTS
+   ========================= */
+
+.alert {
+    border-radius: 10px;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+
+/* Dark mode headings */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+    color: #ffffff;
+}
+
+
+/* Dark mode cards */
+
+body.dark-mode .card {
+    background: #1f2937;
+    color: #f9fafb;
+}
+
+
+/* Dark mode card text */
+
+body.dark-mode .card p,
+body.dark-mode .card li {
+    color: #e5e7eb;
+}
+
+
+/* Dark mode card headings */
+
+body.dark-mode .card h5 {
+    color: #cbd5e1;
+}
+
+body.dark-mode .card h3 {
+    color: #60a5fa;
+}
+
+
+/* Dark mode forms */
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background: #374151;
+    color: #ffffff;
+    border-color: #4b5563;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #cbd5e1;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background: #374151;
+    color: #ffffff;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.2);
+}
+
+
+/* Dark mode tables */
+
+body.dark-mode .table {
+    color: #ffffff;
+}
+
+body.dark-mode .table thead {
+    color: #ffffff;
+}
+
+body.dark-mode .table tbody {
+    color: #ffffff;
+}
+
+body.dark-mode .table tbody tr:hover {
+    background: #374151;
+}
+
+
+/* Dark mode muted text */
+
+body.dark-mode .text-muted {
+    color: #cbd5e1 !important;
+}
+
+
+/* Dark mode white backgrounds */
+
+body.dark-mode .bg-white {
+    background: #1f2937 !important;
+    color: #ffffff;
+}
+
+
+/* Dark mode light buttons */
+
+body.dark-mode .btn-light {
+    background: #374151;
+    color: #ffffff;
+    border-color: #4b5563;
+}
+
+body.dark-mode .btn-light:hover {
+    background: #4b5563;
+    color: #ffffff;
+}
+
+
+/* Dark mode footer */
+
+body.dark-mode footer {
+    background: #0f172a;
+    color: #ffffff;
+}
+
+
+/* =========================
+   SMOOTH TRANSITIONS
+   ========================= */
+
+body,
+.card,
+.form-control,
+.form-select,
+.table,
+footer,
+.btn {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .navbar .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}

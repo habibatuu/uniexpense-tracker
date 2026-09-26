@@ -12,7 +12,8 @@ app = Flask(__name__)
 # =========================
 
 def get_db():
-    connection = sqlite3.connect("database.db")
+    database_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "database.db")
+    connection = sqlite3.connect(database_path)
     connection.row_factory = sqlite3.Row
     return connection
 
